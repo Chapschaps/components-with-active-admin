@@ -1,0 +1,34 @@
+<div class="nav-tabs-tibo d-flex justify-content-center align-items-center nav pt-1" id="nav-tab" role="tablist">
+  <div class='nav-line'></div>
+  <div class='nav-link nav-tabs-tibo__title active' id="all-tab" data-filter='all'>TOUTES PÉRIODES</div>
+  <div class="seperator"><span>&#183;</span></div>
+  <div class='nav-link nav-tabs-tibo__title' id="marketing-tab" data-filter='Antiquité'>ANTIQUITÉ</div>
+  <div class="seperator"><span>&#183;</span></div>
+  <div class='nav-link nav-tabs-tibo__title' id="identity-tab" data-filter='Médiéval'>MÉDIÉVAL</div>
+  <div class="seperator"><span>&#183;</span></div>
+  <div class='nav-link nav-tabs-tibo__title' id="illustration-tab" data-filter='Renaissance'>RENAISSANCE</div>
+  <div class="seperator"><span>&#183;</span></div>
+  <div class='nav-link nav-tabs-tibo__title' id="edition-tab" data-filter='XVIIeXVIIIe'>XVIIe / XVIIIe</div>
+  <div class="seperator"><span>&#183;</span></div>
+  <div class='nav-link nav-tabs-tibo__title' id="webdesign-tab" data-filter='XIXe'>XIXe</div>
+  <div class="seperator"><span>&#183;</span></div>
+  <div class='nav-link nav-tabs-tibo__title' id="webdesign-tab" data-filter='19001920'>1900/1920</div>
+  <div class="seperator"><span>&#183;</span></div>
+  <div class='nav-link nav-tabs-tibo__title' id="webdesign-tab" data-filter='XXe'>XXe</div>
+  <div class='nav-line'></div>
+</div>
+
+<!-- PROJECTS-TABS -->
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane show active">
+    <div class="index-container" id='projects'>
+      <% @projects.each do |project| %>
+        <% @project = project %>
+        <%= render partial: 'shared/project-card-index', object: @project %>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="d-flex bottom-nav-line">
+  <div class='nav-line'></div>
+</div>
