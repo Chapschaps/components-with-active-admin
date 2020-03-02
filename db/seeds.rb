@@ -1,8 +1,19 @@
+admin = User.new(
+  email: "admin@vertugadins.com",
+  password: "123456",
+  admin: true
+)
+
+p "creating #{admin.email}"
+admin.save!
+
+
 achille = Project.new(
   category: "Antiquité",
   description: "Silhouette grecque comprenant une armure anatomique, un casque, des brassards et des spartiates, le tout en cuir.",
   name: "Achille",
   priority: 1,
+  user: admin,
   date: Date.new(2013, 8, 20)
 )
 
@@ -31,6 +42,7 @@ carthas = Project.new(
 Included in the costume: leather articulated arm, leather and wool loin cloth, sandelles, leather accessories and jewlery.",
   name: "Carthas",
   priority: 1,
+  user: admin,
   date: Date.new(2013, 8, 20)
 )
 
@@ -59,6 +71,7 @@ persephone = Project.new(
 Greek mythology inspired costume, including chiton and leather bodice.",
   name: "Perséphone Déesse des enfers",
   priority: 1,
+  user: admin,
   date: Date.new(2013, 8, 20)
 )
 
@@ -87,6 +100,7 @@ aloy = Project.new(
 Warrior-shaman costume, consisting of skirts, leather loincloths, belts, skull bra, leather accessories and braided wig.",
   name: "Aloy la guerrière",
   priority: 1,
+  user: admin,
   date: Date.new(2013, 8, 20)
 )
 
@@ -114,6 +128,7 @@ ambre = Project.new(
 Women tribal warrior costume, inclued a skirt and a satin bodice.",
   name: "Ambre",
   priority: 1,
+  user: admin,
   date: Date.new(2013, 8, 20)
 )
 
@@ -144,6 +159,7 @@ Renaissance costume consisting of a doublet, breeches and shirt.
 Old doublet embroidered with jet beads only available for shooting.",
   name: "Le Prince",
   priority: 1,
+  user: admin,
   date: Date.new(2013, 8, 20)
 )
 
@@ -169,6 +185,7 @@ chasseuse = Project.new(
   description: "Costume de chasseur XVIIIe siècle. Pantalon à pont, habit et gilet brodé, chapeau et accessoires.",
   name: "La chasseuse",
   priority: 1,
+  user: admin,
   date: Date.new(2013, 8, 20)
 )
 
@@ -195,6 +212,7 @@ alyse = Project.new(
 18th women boned dress in blue silk.",
   name: "Alyse",
   priority: 1,
+  user: admin,
   date: Date.new(2013, 8, 20)
 )
 
@@ -222,6 +240,7 @@ barbe = Project.new(
   description: "Silhouette d'inspiration XIXe, composée d'une combinaison d'époque, d'un corset victorien et d'une jupe rayée.",
   name: "La femme à barbe",
   priority: 1,
+  user: admin,
   date: Date.new(2013, 8, 20)
 )
 
@@ -246,6 +265,7 @@ gang = Project.new(
 Silhouettes inspired by Gang of New York and Oliver Twist, with a mix of pants, coats, accessories, shirts... ",
   name: "gang",
   priority: 1,
+  user: admin,
   date: Date.new(2013, 8, 20)
 )
 
@@ -272,6 +292,7 @@ june = Project.new(
   description: "Robe bustier du  soir en mousseline, avec drapé dans le dos.",
   name: "June 1920",
   priority: 1,
+  user: admin,
   date: Date.new(2013, 8, 20)
 )
 
@@ -299,6 +320,7 @@ belle = Project.new(
 1900 inspired wedding dress, un brocade, tulle and vintage laces. Silhouette consisting os a petticoat, skirt, bodice and bow.",
   name: "La belle mariée",
   priority: 1,
+  user: admin,
   date: Date.new(2013, 8, 20)
 )
 
@@ -323,6 +345,7 @@ jumelles = Project.new(
   description: "Création de robes trapèze en satin de coton et vinyle pour un défilé DIM.",
   name: "Les jumelles",
   priority: 1,
+  user: admin,
   date: Date.new(2013, 8, 20)
 )
 
@@ -347,6 +370,7 @@ adam = Project.new(
   description: "Base de costume d'époque retravaillé avec des matières modernes comme le vinyle. Nous y avons intégré de la lumière grâce à des leds. Ce costume a été réalisé pour un jeu de rôle grandeur nature : Fahrenheit.",
   name: "Adam Payne",
   priority: 1,
+  user: admin,
   date: Date.new(2013, 8, 20)
 )
 
