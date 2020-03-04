@@ -1,3 +1,30 @@
+.btn-ghost {
+  color: $blue-opaque;
+  border: 1px solid $blue-opaque;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+  color: $blue-opaque;
+}
+
+.description-prix {
+  margin-left: 1em;
+  margin-top: 6em;
+  font-style: italic;
+  font-weight: light;
+}
+
+.description-contact {
+  margin-left: 1em;
+  margin-top: 4em;
+}
+
 .carousel-item img,
 .modal-dialog {
   max-width: 80vw !important;
@@ -29,31 +56,34 @@
 
 .description {
   position: absolute;
-  bottom: 0px;
-  left: 10%;
   z-index: 3000;
-  font-weight: bold;
-  font-size: .9rem;
   align-items: center;
+  top: 0px;
+  left: 0px;
+  transform: translate(+10%,-0%);
+  width: 30%;
+  background-color: white;
+  box-shadow: 0px 4px 16px rgba(0,0,0,0.3);
+  height: 100%;
+  z-index: -1;
 }
 
 .description__project {
-  color: white;
-  background: $blue;
-  padding: .25rem .5rem;
-  box-shadow: 0px 4px 16px rgba(0,0,0,0.3);
-  width: fit-content;
+  margin-left: 1em;
+  font-size: .9rem;
+  width: 90%;
   // position: relative;
   // right: 200px;
   // bottom: 200px;
 }
 
 .description__client {
-  color: $blue;
-  background: white;
-  padding: .25rem .5rem;
-  box-shadow: 0px 4px 16px rgba(0,0,0,0.3);
-  width: fit-content;
+  color: $blue-opaque;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
 }
 
 .carousel-item {
